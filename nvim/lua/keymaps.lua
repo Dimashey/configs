@@ -29,3 +29,8 @@ map("x", "J", ":move '>+1<CR>gv-gv", opts)
 map("x", "K", ":move '<-2<CR>gv-gv", opts)
 map("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Telescrope
+map("n", "<c-n>", "<cmd>Telescope find_files<cr>", opts)
+map("n", "<c-f>", "<cmd>lua require('telescope.builtin').live_grep()<cr>", opts)
+

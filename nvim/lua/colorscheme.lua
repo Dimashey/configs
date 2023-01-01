@@ -3,6 +3,6 @@ local colorscheme = "catppuccin-mocha" --catppuccin, catppuccin-latte, catppucci
 local status_ok, _ = pcall(vim.cmd.colorscheme, colorscheme)
 
 if not status_ok then
-  vim.notify("colorscheme" .. coloscheme .. "not found!")
+  vim.notify("colorscheme" .. colorscheme .. "not found!")
   return
 end
