@@ -11,4 +11,11 @@ configs.setup {
 
   },
   indent = { enable = true, disable = { "yaml" } },
+	autopairs = {
+		enable = true,
+	},
+	context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
 }
