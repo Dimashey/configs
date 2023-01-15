@@ -7,7 +7,7 @@ g.mapleader = " "
 g.maplocalleader = " "
 
 -- File tree
-map("n", "<leader>e", ":Lex 30<cr>", opts)
+map("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Resizing
 map("n", "<C-Up>", ":resize +2<CR>", opts)
