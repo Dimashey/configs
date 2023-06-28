@@ -1,4 +1,4 @@
-local colorscheme = "catppuccin-mocha" --catppuccin, catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+local colorscheme = "catppuccin-macchiato" --catppuccin, catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 local status_ok, _ = pcall(vim.cmd.colorscheme, colorscheme)
 

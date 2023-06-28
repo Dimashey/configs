@@ -1,13 +1,15 @@
-require('colorscheme')
-require('options')
-require('plugins')
-require('keymaps')
-require('cmp_setup')
-require('lsp_setup')
-require('telescope_setup')
-require("treesitter_setup")
-require("autopairs_setup")
-require("comment_setup")
-require("gitsigns_setup")
-require("nvim-tree_setup")
-require("bufferline_setup")
+require 'colorscheme'
+require 'options'
+require 'plugins'
+require 'keymaps'
+require 'cmp_setup'
+require 'lsp_setup'
+require 'telescope_setup'
+require "treesitter_setup"
+require "autopairs_setup"
+require "comment_setup"
+require "gitsigns_setup"
+require "nvim-tree_setup"
+require "bufferline_setup"
+require "toggleterm_setup"
+require "project_setup"

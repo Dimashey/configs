@@ -59,11 +59,15 @@ return packer.startup(function(use)
 	use "rafamadriz/friendly-snippets"
 
 	use "neovim/nvim-lspconfig"
-	use "williamboman/nvim-lsp-installer"
+	use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+
 	use "tamago324/nlsp-settings.nvim"
 
 	use "nvim-telescope/telescope.nvim"
 	use 'nvim-telescope/telescope-media-files.nvim'
+
+	use "akinsho/toggleterm.nvim"
 
 	use {
     "nvim-treesitter/nvim-treesitter",
@@ -83,8 +87,16 @@ return packer.startup(function(use)
 	use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
+	use "ahmedkhalf/project.nvim"
+
 	use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
+
+	use 'neovim/nvim-lspconfig'
+	use 'nvim-treesitter/nvim-treesitter'
+
+	use 'ray-x/go.nvim'
+	use 'ray-x/guihua.lua' -- recommended if need floating window support
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
