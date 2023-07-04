@@ -59,6 +59,10 @@ return packer.startup(function(use)
 	use "rafamadriz/friendly-snippets"
 
 	use "neovim/nvim-lspconfig"
+	use "jose-elias-alvarez/null-ls.nvim"
+	use "MunifTanjim/prettier.nvim"
+	use "MunifTanjim/eslint.nvim"
+
 	use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
 
@@ -81,6 +85,13 @@ return packer.startup(function(use)
 	use "numToStr/Comment.nvim" -- Easily comment stuff
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
 
+	use 'mfussenegger/nvim-dap'
+	use { "leoluz/nvim-dap-go", requires = {"mfussenegger/nvim-dap"} }
+	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+	use 'theHamsta/nvim-dap-virtual-text'
+	use 'nvim-telescope/telescope-dap.nvim'
+	use "Pocco81/DAPInstall.nvim"
+
 	-- Git
   use "lewis6991/gitsigns.nvim"
 
@@ -97,6 +108,8 @@ return packer.startup(function(use)
 
 	use 'ray-x/go.nvim'
 	use 'ray-x/guihua.lua' -- recommended if need floating window support
+
+	use 'folke/neodev.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
