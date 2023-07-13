@@ -111,6 +111,9 @@ return packer.startup(function(use)
 
 	use 'folke/neodev.nvim'
 
+	-- Vim API
+	use 'rcarriga/nvim-notify'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
